@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:image" content="images/Raph-meta.jpg" />
+  <title>Raphael Musyoki — Digital Marketing · UX/UI · Front-End</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────── -->
+  <header class="nav-header" id="nav-header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">RM<span class="dot">.</span></a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about"    class="nav__link">About</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#tools"    class="nav__link">Tools</a></li>
+        <li><a href="#contact"  class="nav__link cta-link">Contact</a></li>
+      </ul>
+      <button class="nav__burger" id="nav-burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ─── HERO ─────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-shapes">
+      <div class="shape shape--1"></div>
+      <div class="shape shape--2"></div>
+      <div class="shape shape--3"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__badge reveal">Available for work ✦</div>
+      <h2 class="hero__title reveal">
+        Crafting <span class="gradient-text">Digital Experiences</span><br />
+        That Convert & Delight
+      </h2>
+      <p class="hero__sub reveal">
+        Digital Marketer · UX/UI Designer · Front-End Developer · Virtual Assistant<br />
+        I bridge strategy, design, code, and smart automation to build brands people love.
+      </p>
+      <div class="hero__cta reveal">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#contact"  class="btn btn--ghost">Get In Touch</a>
+      </div>
+      <div class="hero__stats reveal">
+        <div class="stat"><span class="stat__num" data-target="23">0</span><span class="stat__label">Projects Delivered</span></div>
+        <div class="stat"><span class="stat__num" data-target="8">0</span><span class="stat__label">Brands Grown</span></div>
+        <div class="stat"><span class="stat__num" data-target="2">0</span><span class="stat__label">Years Experience</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────── -->
+  <section class="about section" id="about">
+    <div class="container about__grid">
+      <div class="about__image-wrap reveal">
+        <div class="about__image-frame">
+          <div class="about__avatar">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="100" fill="url(#avatarGrad)"/>
+              <circle cx="100" cy="80" r="34" fill="rgba(255,255,255,0.25)"/>
+              <ellipse cx="100" cy="160" rx="52" ry="38" fill="rgba(255,255,255,0.18)"/>
+              <defs>
+                <linearGradient id="avatarGrad" x1="0" y1="0" x2="200" y2="200">
+                  <stop offset="0%" stop-color="#6C63FF"/>
+                  <stop offset="100%" stop-color="#A855F7"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="about__tag about__tag--1">🎯 Strategy</div>
+          <div class="about__tag about__tag--2">🎨 Design</div>
+          <div class="about__tag about__tag--3">💻 Code</div>
+          <div class="about__tag about__tag--4">🤖 Automation</div>
+          
+        </div>
+      </div>
+      <div class="about__content">
+        <p class="section__label reveal">About Me</p>
+        <h2 class="section__title reveal">A Quad-Threat Creative & Technologist</h2>
+        <p class="about__text reveal">
+          Hi, I'm <strong>Raphael Musyoki</strong> — a versatile professional who sits at the intersection of
+          <em>digital marketing</em>, <em>UX/UI design</em>, <em>front-end development</em>, and
+          <em>virtual assistance</em>.
+          With 2+ years of hands-on experience, I help startups and established brands build
+          digital products that look stunning, rank well, convert visitors, and run like clockwork.
+        </p>
+        <p class="about__text reveal">
+          My workflow is holistic: I think about the user journey before I touch a wireframe,
+          consider SEO before I write a line of code, automate repetitive tasks before they slow a team down,
+          and validate assumptions with data before shipping anything. The result? Products that are beautiful <em>and</em> effective.
+        </p>
+        <div class="about__pillars reveal">
+          <div class="pillar">
+            <div class="pillar__icon">🎯</div>
+            <h4>Digital Marketing</h4>
+            <p>Social Media Management/Marketing, SEO, SEM, social strategy, email campaigns, analytics & conversion optimization.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon">🎨</div>
+            <h4>UX / UI Design</h4>
+            <p>User research, wireframing, prototyping, design systems & accessibility-first interfaces.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon">💻</div>
+            <h4>Front-End Dev</h4>
+            <p>Performant, responsive web applications built with modern HTML, CSS & JavaScript, React & Next.js.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon">🤖</div>
+            <h4>Virtual Assistant</h4>
+            <p>Google workspace, Calendar management, research, CRM upkeep, inbox zero & workflow automation.</p>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn--primary reveal">Let's Work Together</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ──────────────────────────────────────── -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <p class="section__label reveal" style="text-align:center">Featured Work</p>
+      <h2 class="section__title reveal" style="text-align:center">Projects That Made an Impact</h2>
+      <div class="projects__filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ux">UX / UI</button>
+        <button class="filter-btn" data-filter="dev">Dev</button>
+        <button class="filter-btn" data-filter="marketing">Marketing</button>
+        <button class="filter-btn" data-filter="va">Virtual Assistant</button>
+      </div>
+      <div class="projects__grid" id="projects-grid">
+
+        <!-- Card 1 — Raph's Collection (real photo) -->
+        <article class="project-card reveal" data-category="ux">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/Raph.png"
+              alt="Raph's Collection — fashion e-commerce storefront"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>UX Design</span><span>E-Commerce</span><span>Figma</span></div>
+            <h3 class="project-card__title">Raph's Collection — Fashion Store</h3>
+            <p class="project-card__desc">End-to-end UX/UI design for a fashion e-commerce store. Crafted intuitive category navigation, hero banners, and a streamlined checkout flow to drive conversions.</p>
+            <div class="project-card__links">             
+              <a href="https://www.figma.com/design/ZMsGjpLcX0L1zEHB11k8Sl/Raph's-Collection?node-id=0-1&t=ma0nBC2IDmlypKgY-1" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="project-card reveal" data-category="dev">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/Password.png"
+              alt="Password Generator — web application for a password management app"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>Dev</span><span>Html</span> <span>CSS</span> <span>JavaScript</span></div>
+            <h3 class="project-card__title">Password Generator — Password Management App</h3>
+            <p class="project-card__desc">Web application for a password management app. Created a modern, responsive layout that showcases the agency's services and portfolio effectively.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/M-67r21/Password-Generator-App.git" class="btn btn--sm btn--ghost">GitHub</a>
+              <a href="https://m-67r21.github.io/Password-Generator-App/" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project-card reveal" data-category="dev">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/Calc.png"
+              alt="Calculator App — web application for a simple calculator"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>Dev</span><span>Html</span><span>CSS</span><span>JavaScript</span></div>
+            <h3 class="project-card__title">Calculator App</h3>
+            <p class="project-card__desc">Web application for a simple calculator. Built with a clean, intuitive interface and responsive design.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/M-67r21/Calculator.git" class="btn btn--sm btn--ghost">GitHub</a>
+              <a href="https://m-67r21.github.io/Calculator/" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="project-card reveal" data-category="ux">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/Food Ordering.png"
+              alt="Food Ordering App — UX/UI design for a food delivery service"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>UX Design</span><span>E-Commerce</span><span>Figma</span></div>
+            <h3 class="project-card__title">Food Ordering App — Food Delivery Service</h3>
+            <p class="project-card__desc">End-to-end UX/UI design for a food delivery service. Designed a seamless ordering experience with intuitive navigation and a streamlined checkout process.</p>
+            <div class="project-card__links">
+              <a href="https://www.figma.com/design/hny9LYPYlRajTa0n0DL0nM/Food-App?node-id=0-1&t=HE3gObXKOCDXFzIO-0" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="project-card reveal" data-category="dev">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/ClavesWeb.png"
+              alt="Claves Web — digital agency website"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>Dev</span><span>Digital Agency</span><span>React</span></div>
+            <h3 class="project-card__title">Claves Web — Digital Agency Website</h3>
+            <p class="project-card__desc">Website for a digital agency. Crafted intuitive category navigation, hero banners, and a streamlined checkout flow to drive conversions.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/M-67r21/Claves" class="btn btn--sm btn--ghost">GitHub</a>
+              <a href="https://claves-vt4b.vercel.app/" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="project-card reveal" data-category="dev">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/Raphweb.png"
+              alt="Raph's Collection — fashion e-commerce storefront"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>Dev</span><span>E-Commerce</span><span>React</span></div>
+            <h3 class="project-card__title">Raph's Collection — Fashion Store</h3>
+            <p class="project-card__desc">Web design for a fashion e-commerce store. Crafted intuitive category navigation, hero banners, and a streamlined checkout flow to drive conversions.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/M-67r21/Raph-s-Collection.git" class="btn btn--sm btn--ghost">GitHub</a>
+              <a href="https://raph-s-collection.vercel.app/" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7 — VA -->
+        <article class="project-card reveal" data-category="ux">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/E-Commerce.png"
+              alt="Sneakers App — UX/UI design for a sneakers e-commerce store"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>UX Design</span><span>E-Commerce</span><span>Figma</span></div>
+            <h3 class="project-card__title">Sneakers App</h3>
+            <p class="project-card__desc">End-to-end UX/UI design for a sneakers fashion e-commerce store. Crafted intuitive category navigation, hero banners, and a streamlined checkout flow to drive conversions.</p>
+            <div class="project-card__links">
+              <a href="https://www.figma.com/design/tZ9USP2Oh70wWw0ZF4ETzc/E-Commerce?node-id=0-1&t=i6t5ivqebNCtPJUP-0" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8 —  -->
+        <article class="project-card reveal" data-category="dev">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/Rock.png"
+              alt="Rock Paper Scissors - web-based game application inspired by the classic hand game"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>Dev</span><span>Html</span> <span>CSS</span> <span>Javascript</span></div>
+            <h3 class="project-card__title">Rock Paper Scissors</h3>
+            <p class="project-card__desc">A web-based game application inspired by the classic hand game.</p>            
+            <div class="project-card__links">
+              <a href="https://github.com/M-67r21/Rock-Paper" class="btn btn--sm btn--ghost">GitHub</a>
+              <a href="https://m-67r21.github.io/Mutunga-Musyoki/" class="btn btn--sm btn--primary">Live Site</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 9 —  -->
+        <article class="project-card reveal" data-category="ux">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/BigSmoke.png"
+              alt="Big Smoke — Booking design for a travel booking website"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>UX/UI Design</span><span>Figma</span></div>
+            <h3 class="project-card__title">Big Smoke — Booking website</h3>
+            <p class="project-card__desc">The app features a user-friendly interface, personalized recommendations, and secure payment options, ensuring a hassle-free booking process.</p>
+            <div class="project-card__metrics">
+              <span>↑ Conversion Rate</span>
+              <span>Mobile-First</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm btn--ghost">Case Study</a>
+              <a href="https://www.figma.com/design/tZ9USP2Oh70wWw0ZF4ETzc/E-Commerce?node-id=0-1&t=i6t5ivqebNCtPJUP-0" class="btn btn--sm btn--primary">Live Site</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 10 — VA -->
+        <article class="project-card reveal" data-category="ux">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/Employee.png"
+              alt="Employee Management System"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>UX Design</span><span>Figma</span></div>
+            <h3 class="project-card__title">Employee Management System</h3>
+            <p class="project-card__desc">End-to-end UX/UI design for an employee management system. Crafted intuitive workflows, dashboards, and reporting features to streamline HR processes.</p>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm btn--ghost">Case Study</a>
+              <a href="https://www.figma.com/design/R36dLhXDiVF1TH2uEH0iIi/Employee-Management-System?node-id=0-1&t=Go8CdW2P4VIDPHfI-0" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 11 — VA -->
+        <article class="project-card reveal" data-category="ux">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/Metro.png"
+              alt="Metro Transit App"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>UX Design</span><span>Figma</span></div>
+            <h3 class="project-card__title">Metro Transit App</h3>
+            <p class="project-card__desc">End-to-end UX/UI design for a public transit app. Created a seamless user experience for route planning, real-time updates, and ticket purchasing.</p>
+            <div class="project-card__links">             
+              <a href="https://www.figma.com/design/v3TdJp4wp4TgOSswWMMrxP/SuperMetro?node-id=0-1&t=jVCGHhl48tCEh6XT-0" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 12 — VA -->
+        <article class="project-card reveal" data-category="dev">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/Etch.png"
+              alt="Etch-a-Sketch - web-based drawing application inspired by the classic toy"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>Dev</span><span>Html</span><span>CSS</span><span>JavaScript</span></div>
+            <h3 class="project-card__title">Etch-a-Sketch</h3>
+            <p class="project-card__desc">Web-based drawing application inspired by the classic toy. Implemented a responsive interface with intuitive drawing tools and a nostalgic aesthetic.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/M-67r21/Etch-a-Sketch" class="btn btn--sm btn--ghost">GitHub</a>
+              <a href="https://m-67r21.github.io/Etch-a-Sketch-App/" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 13 — VA -->
+        <article class="project-card reveal" data-category="ux">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/EAYA.png"
+              alt="EAYA — Educational App"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>UX Design</span><span>Figma</span></div>
+            <h3 class="project-card__title">EAYA — Educational App</h3>
+            <p class="project-card__desc">End-to-end UX/UI design for an educational app. Created a engaging user experience for interactive learning and progress tracking.</p>
+            <div class="project-card__links">             
+              <a href="https://www.figma.com/design/g5ejyMcA7xnkDOOyJnAEFt/EAYA?node-id=0-1&t=C0uy094yYIuB4m3F-0" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 14 — VA -->
+        <article class="project-card reveal" data-category="ux">
+          <div class="project-card__img has-photo">
+            <img
+              src="images/Port.png"
+              alt="Portfolio — UX/UI design for a personal portfolio website"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span>UX Design</span><span>Figma</span></div>
+            <h3 class="project-card__title">Portfolio — UX/UI Design</h3>
+            <p class="project-card__desc">End-to-end UX/UI design for a previous personal portfolio website. Created a modern, layout that showcases my work and skills.</p>
+            <div class="project-card__links">             
+              <a href="https://www.figma.com/design/BzFoL6OksxUr756LE33Bko/Nicholas-Portfolio-Website?node-id=0-1&t=gR0EHvmS7hZjIMWx-1" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TOOLS ──────────────────────────────────────────── -->
+  <section class="tools section" id="tools">
+    <div class="container">
+      <p class="section__label reveal" style="text-align:center">My Toolkit</p>
+      <h2 class="section__title reveal" style="text-align:center">Tools, Frameworks & Platforms</h2>
+
+      <div class="tools__categories">
+
+        <!-- Design -->
+        <div class="tool-category reveal">
+          <h3 class="tool-category__title"><span>🎨</span> Design & Prototyping</h3>
+          <div class="tool-grid">
+            <div class="tool-item"><div class="tool-item__icon figma"></div><span>Figma</span></div>
+            <div class="tool-item"><div class="tool-item__icon adobe-xd"></div><span>Adobe XD</span></div>
+            <div class="tool-item"><div class="tool-item__icon sketch"></div><span>Sketch</span></div>
+            <div class="tool-item"><div class="tool-item__icon ps"></div><span>Photoshop</span></div>
+            <div class="tool-item"><div class="tool-item__icon ai"></div><span>Illustrator</span></div>
+            <div class="tool-item"><div class="tool-item__icon invision"></div><span>InVision</span></div>
+          </div>
+        </div>
+
+        <!-- Front-End -->
+        <div class="tool-category reveal">
+          <h3 class="tool-category__title"><span>💻</span> Front-End Development</h3>
+          <div class="tool-grid">
+            <div class="tool-item"><div class="tool-item__icon html"></div><span>HTML5</span></div>
+            <div class="tool-item"><div class="tool-item__icon css"></div><span>CSS3</span></div>
+            <div class="tool-item"><div class="tool-item__icon js"></div><span>JavaScript</span></div>
+            <div class="tool-item"><div class="tool-item__icon react"></div><span>React</span></div>
+            <div class="tool-item"><div class="tool-item__icon next"></div><span>Next.js</span></div>
+            <div class="tool-item"><div class="tool-item__icon tailwind"></div><span>Tailwind CSS</span></div>
+            <div class="tool-item"><div class="tool-item__icon sass"></div><span>Sass</span></div>
+            <div class="tool-item"><div class="tool-item__icon bootstrap"></div><span>Bootstrap</span></div>
+          </div>
+        </div>
+
+        <!-- Marketing -->
+        <div class="tool-category reveal">
+          <h3 class="tool-category__title"><span>📣</span> Marketing & Analytics</h3>
+          <div class="tool-grid">
+            <div class="tool-item"><div class="tool-item__icon ga"></div><span>Google Analytics</span></div>
+            <div class="tool-item"><div class="tool-item__icon gads"></div><span>Google Ads</span></div>
+            <div class="tool-item"><div class="tool-item__icon meta"></div><span>Meta Ads</span></div>
+            <div class="tool-item"><div class="tool-item__icon hubspot"></div><span>HubSpot</span></div>
+            <div class="tool-item"><div class="tool-item__icon mailchimp"></div><span>Mailchimp</span></div>
+            <div class="tool-item"><div class="tool-item__icon semrush"></div><span>SEMrush</span></div>
+            <div class="tool-item"><div class="tool-item__icon ahrefs"></div><span>Ahrefs</span></div>
+            <div class="tool-item"><div class="tool-item__icon hotjar"></div><span>Hotjar</span></div>
+          </div>
+        </div>
+
+        <!-- Platforms -->
+        <div class="tool-category reveal">
+          <h3 class="tool-category__title"><span>🚀</span> Platforms & Workflow</h3>
+          <div class="tool-grid">
+            <div class="tool-item"><div class="tool-item__icon shopify"></div><span>Shopify</span></div>
+            <div class="tool-item"><div class="tool-item__icon wp"></div><span>WordPress</span></div>
+            <div class="tool-item"><div class="tool-item__icon clickup"></div><span>ClickUp</span></div>
+            <div class="tool-item"><div class="tool-item__icon github"></div><span>GitHub</span></div>
+            <div class="tool-item"><div class="tool-item__icon vercel"></div><span>Vercel</span></div>
+            <div class="tool-item"><div class="tool-item__icon notion"></div><span>Notion</span></div>
+            <div class="tool-item"><div class="tool-item__icon slack"></div><span>Slack</span></div>
+          </div>
+        </div>
+
+        <!-- Virtual Assistant -->
+        <div class="tool-category reveal">
+          <h3 class="tool-category__title"><span>🤖</span> Virtual Assistant & Productivity</h3>
+          <div class="tool-grid">
+            <div class="tool-item"><div class="tool-item__icon notion"></div><span>Notion</span></div>
+            <div class="tool-item"><div class="tool-item__icon trello"></div><span>Trello</span></div>
+            <div class="tool-item"><div class="tool-item__icon asana"></div><span>Asana</span></div>
+            <div class="tool-item"><div class="tool-item__icon gsuite"></div><span>Google Workspace</span></div>
+            <div class="tool-item"><div class="tool-item__icon zoom"></div><span>Zoom</span></div>
+            <div class="tool-item"><div class="tool-item__icon slack"></div><span>Slack</span></div>
+            <div class="tool-item"><div class="tool-item__icon calendly"></div><span>Calendly</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Skill bars -->
+      <div class="skills-bars reveal">
+        <h3 class="skills-bars__title">Core Proficiencies</h3>
+        <div class="skill"><div class="skill__meta"><span>UX / UI Design</span><span>90%</span></div><div class="skill__bar"><div class="skill__fill" data-width="95"></div></div></div>
+        <div class="skill"><div class="skill__meta"><span>Front-End Development</span><span>76%</span></div><div class="skill__bar"><div class="skill__fill" data-width="88"></div></div></div>
+        <div class="skill"><div class="skill__meta"><span>SEO & Content Marketing</span><span>92%</span></div><div class="skill__bar"><div class="skill__fill" data-width="92"></div></div></div>
+        <div class="skill"><div class="skill__meta"><span>Paid Advertising</span><span>72%</span></div><div class="skill__bar"><div class="skill__fill" data-width="80"></div></div></div>
+        <div class="skill"><div class="skill__meta"><span>Email Marketing & CRM</span><span>85%</span></div><div class="skill__bar"><div class="skill__fill" data-width="85"></div></div></div>
+        <div class="skill"><div class="skill__meta"><span>Analytics & Data</span><span>78%</span></div><div class="skill__bar"><div class="skill__fill" data-width="78"></div></div></div>
+        <div class="skill"><div class="skill__meta"><span>Virtual Assistance & Automation</span><span>84%</span></div><div class="skill__bar"><div class="skill__fill" data-width="90"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────── -->
+  <section class="contact section" id="contact">
+    <div class="contact__bg-shape"></div>
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <p class="section__label reveal">Get In Touch</p>
+        <h2 class="section__title reveal">Let's Build Something<br /><span class="gradient-text">Remarkable Together</span></h2>
+        <p class="contact__text reveal">Whether you need a brand strategy, a pixel-perfect UI, or a high-performance website, I'd love to hear about your project.</p>
+        <div class="contact__details reveal">
+          <a href="mailto:raphmutunga00@gmail.com" class="contact__detail">
+            <span class="contact__detail-icon">✉️</span>
+            <span>raphmutunga00@gmail.com</span>
+          </a>
+          <a href="tel:+254722795798" class="contact__detail">
+            <span class="contact__detail-icon">📞</span>
+            <span>+254 722 795 798</span>
+          </a>
+          <div class="contact__detail">
+            <span class="contact__detail-icon">📍</span>
+            <span>Nairobi, Kenya · Remote Worldwide</span>
+          </div>
+        </div>
+        <div class="contact__social reveal">
+          <a href="https://www.linkedin.com/in/raphael-mutunga-58b888392/" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Dribbble">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+          </a>
+          <a href="https://github.com/M-67r21" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact__form reveal" id="contact-form"
+            action="https://formspree.io/f/mqeyeqdj"
+            method="POST"
+            novalidate>
+        <!-- Replace YOUR_FORM_ID with the ID you get after signing up at formspree.io -->
+        <input type="hidden" name="_replyto" value="raphmutunga00@gmail.com" />
+        <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission" />
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          <span class="form-error" id="name-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+          <span class="form-error" id="email-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option value="">— Select a service —</option>
+            <option>Digital Marketing</option>
+            <option>UX / UI Design</option>
+            <option>Front-End Development</option>
+            <option>Virtual Assistant Services</option>
+            <option>Full Project (Design + Dev)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          <span class="form-error" id="message-error"></span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+          <span class="btn-text">Send Message</span>
+          <span class="btn-icon">→</span>
+        </button>
+        <div class="form-success" id="form-success">
+          ✅ Thanks! I'll get back to you within 24 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">RM<span class="dot">.</span></div>
+      <p class="footer__copy">© 2026 Raphael Musyoki. Designed & built with ❤️</p>
+      <nav class="footer__nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="back-to-top" id="back-to-top" aria-label="Back to top">↑</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
