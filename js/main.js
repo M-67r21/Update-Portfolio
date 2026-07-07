@@ -282,3 +282,15 @@ nameInput.addEventListener('input', function(e) {
 
   e.target.value = e.target.value.replace(/[^A-Za-z\s]/g, '');
 });
+
+/* ── Form cannot submit if no service is selected ─────────────────────── */
+const serviceSelect = document.getElementById('service');
+const serviceError = document.getElementById('service-error');
+
+serviceSelect.addEventListener('change', function() {
+  if (serviceSelect.value === '') {
+    serviceError.textContent = 'Please select a service.';
+  } else {
+    serviceError.textContent = '';
+  }
+});
