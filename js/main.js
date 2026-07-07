@@ -268,6 +268,17 @@ style.textContent = `
 document.head.appendChild(style);
 
 /* ── Don't accept numbers and other characters for full name ─────────────────────── */
-document.getElementById('name').addEventListener('input', function(e) {
+const nameInput = document.getElementById('name');
+const nameError = document.getElementById('name-error');
+
+nameInput.addEventListener('input', function(e) {
+  const hasInvalidChars = /[^A-Za-z\s]/.test(e.target.value);
+
+  if (hasInvalidChars) {
+    nameError.textContent = 'Please enter a name using only letters.';
+  } else {
+    nameError.textContent = '';
+  }
+
   e.target.value = e.target.value.replace(/[^A-Za-z\s]/g, '');
 });
