@@ -267,7 +267,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-/* ── Don't accept numbers for full name ─────────────────────── */
+/* ── Don't accept numbers and other characters for full name ─────────────────────── */
 document.getElementById('name').addEventListener('input', function(e) {
-  e.target.value = e.target.value.replace(/[0-9]/g, '');
+  e.target.value = e.target.value.replace(/[^A-Za-z\s]/g, '');
 });
