@@ -904,7 +904,7 @@ body {
 .footer {
   background: var(--clr-bg-2);
   border-top: 1px solid var(--clr-border);
-  padding: 1rem 0;
+  padding: 2.5rem 0;
 }
 .footer__inner {
   display: flex;
