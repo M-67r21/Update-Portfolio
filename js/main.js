@@ -284,13 +284,24 @@ nameInput.addEventListener('input', function(e) {
 });
 
 /* ── Form cannot submit if no service is selected ─────────────────────── */
-const serviceSelect = document.getElementById('service');
-const serviceError = document.getElementById('service-error');
+document.addEventListener('DOMContentLoaded', function() {
+  const serviceSelect = document.getElementById('service');
+  const serviceError = document.getElementById('service-error');
+  const form = document.getElementById('contact-form'); // ⚠️ update this ID to match your <form>
 
-serviceSelect.addEventListener('change', function() {
-  if (serviceSelect.value === '') {
-    serviceError.textContent = 'Please select a service.';
-  } else {
-    serviceError.textContent = '';
-  }
+  // Clear error as soon as user picks something
+  serviceSelect.addEventListener('change', function() {
+    if (serviceSelect.value !== '') {
+      serviceError.textContent = '';
+    }
+  });
+
+  // Block submission if nothing is selected
+  form.addEventListener('submit', function(e) {
+    if (serviceSelect.value === '') {
+      e.preventDefault();
+      serviceError.textContent = 'Please select a service.';
+      serviceSelect.focus();
+    }
+  });
 });
