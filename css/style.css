@@ -373,6 +373,7 @@ body {
   position: relative;
   width: 340px;
   height: 380px;
+  margin: 0 auto;
 }
 
 .about__avatar {
@@ -398,20 +399,23 @@ body {
 
 .about__tag {
   position: absolute;
-  padding: .5rem 1rem;
-  background: var(--clr-bg-card);
-  border: 1px solid var(--clr-border);
-  border-radius: 50px;
-  font-size: .8rem;
-  font-weight: 600;
-  color: var(--clr-text);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0,0,0,.3);
+  top: 50%;
+  left: 50%;
+  padding: 8px 14px;
+  background: #fff;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  --radius: 190px; /* distance from center — tweak to taste */
 }
-.about__tag--1 { top:  20px; right: -20px; }
-.about__tag--2 { bottom: 20px; right: -20px; }
-.about__tag--3 { top:  20px; left: -10px; }
-.about__tag--4 { bottom: 20px; left: -10px; }
+/* 5 tags placed 72° apart, starting at the top and going clockwise */
+.about__tag--1 { transform: rotate(0deg)   translate(var(--radius)) rotate(0deg); }
+.about__tag--2 { transform: rotate(72deg)  translate(var(--radius)) rotate(-72deg); }
+.about__tag--3 { transform: rotate(144deg) translate(var(--radius)) rotate(-144deg); }
+.about__tag--4 { transform: rotate(216deg) translate(var(--radius)) rotate(-216deg); }
+.about__tag--5 { transform: rotate(288deg) translate(var(--radius)) rotate(-288deg); }
 
 .about__text {
   color: var(--clr-text-muted);
