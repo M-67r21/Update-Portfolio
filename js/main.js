@@ -267,6 +267,46 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+// Add click event to about tags to filter projects and link about icons to project filters
+  document.addEventListener('DOMContentLoaded', function() {
+    // Avatar click → show all projects
+    document.querySelector('.about__avatar').addEventListener('click', function() {
+      const allButton = document.querySelector('.filter-btn[data-filter="all"]');
+      if (allButton) {
+        allButton.click();
+        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    // Tag clicks → filter by specific category
+    document.querySelectorAll('.about__tag a[data-filter-target]').forEach(function(tag) {
+      tag.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetFilter = tag.dataset.filterTarget;
+        const targetButton = document.querySelector(`.filter-btn[data-filter="${targetFilter}"]`);
+        if (targetButton) {
+          targetButton.click();
+          document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  });
+
+  // Pillar clicks → filter by specific category
+  document.querySelectorAll('.pillar').forEach(function(pillar) {
+  const targetFilter = pillar.dataset.filterTarget;
+  const clickableParts = pillar.querySelectorAll('.pillar__icon, h4');
+
+  clickableParts.forEach(function(el) {
+    el.addEventListener('click', function() {
+      const targetButton = document.querySelector(`.filter-btn[data-filter="${targetFilter}"]`);
+      if (targetButton) {
+        targetButton.click();
+        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+});
 /* ── Don't accept numbers and other characters for full name ─────────────────────── */
 const nameInput = document.getElementById('name');
 const nameError = document.getElementById('name-error');

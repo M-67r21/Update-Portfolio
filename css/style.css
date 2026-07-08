@@ -387,6 +387,7 @@ body {
   justify-content: center;
   box-shadow: var(--glow), inset 0 0 60px rgba(0,0,0,.2);
   animation: morphBlob 8s ease-in-out infinite;
+  cursor: pointer;
 }
 .about__avatar svg { width: 100%; height: 100%; }
 
@@ -414,6 +415,7 @@ body {
   color: var(--clr-text);
   text-decoration: none;
   transition: color var(--transition);
+  cursor: pointer;
 }
 /* 5 tags placed 72° apart, starting at the top and going clockwise */
 .about__tag--1 { transform: rotate(0deg)   translate(var(--radius)) rotate(0deg); }
@@ -432,9 +434,11 @@ body {
 
 .about__pillars {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
   gap: 1rem;
-  margin: 2rem 0 2.5rem;
+  padding-block: 1rem;
+  margin: 2rem 0 2rem;
 }
 
 .pillar {
@@ -449,8 +453,8 @@ body {
   transform: translateY(-4px);
   box-shadow: var(--shadow-card);
 }
-.pillar__icon { font-size: 1.5rem; margin-bottom: .5rem; }
-.pillar h4 { font-size: .9rem; font-weight: 700; margin-bottom: .4rem; color: #fff; }
+.pillar__icon { font-size: 1.5rem; margin-bottom: .5rem; cursor: pointer; }
+.pillar h4 { font-size: .9rem; font-weight: 700; margin-bottom: .4rem; color: #fff; cursor: pointer;}
 .pillar p  { font-size: .78rem; color: var(--clr-text-muted); line-height: 1.5; }
 
 /* ─────────────────────────────────────────────────────────
@@ -735,6 +739,19 @@ body {
 .bootstrap { background: linear-gradient(135deg,#7952B3,#563D7C); }
 .bootstrap::before { content: 'B'; font-size: 1.1rem; font-weight: 900; font-style: italic; }
 
+/* QA & Automation */
+.postman   { background: linear-gradient(135deg,#FF6C37,#EF5B25); }
+.postman::before { content: '▶'; font-size: .9rem; }
+
+.playwright { background: linear-gradient(135deg,#2EAD33,#D45247); }
+.playwright::before { content: '⛭'; font-size: 1rem; }
+
+.testrail  { background: linear-gradient(135deg,#65C179,#3E9E56); }
+.testrail::before { content: 'TR'; font-size: .72rem; }
+
+.cypress   { background: linear-gradient(135deg,#17202C,#3C3C3C); }
+.cypress::before { content: '⬡'; font-size: 1rem; }
+
 /* Skill bars */
 .skills-bars {
   margin-top: 4rem;
@@ -913,7 +930,7 @@ body {
 .footer {
   background: var(--clr-bg-2);
   border-top: 1px solid var(--clr-border);
-  padding: 2.5rem 0;
+  padding: 1rem 0;
 }
 .footer__inner {
   display: flex;
@@ -949,9 +966,9 @@ body {
 ───────────────────────────────────────────────────────── */
 .back-to-top {
   position: fixed;
-  bottom: 2rem;
+  bottom: 1rem;
   right: 2rem;
-  width: 44px; height: 44px;
+  width: 30px; height: 30px;
   background: var(--gradient);
   color: #fff;
   border-radius: 50%;
