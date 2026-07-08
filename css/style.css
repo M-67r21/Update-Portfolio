@@ -408,6 +408,7 @@ body {
   font-size: 0.85rem;
   font-weight: 500;
   white-space: nowrap;
+  text-decoration: none;
   --radius: 190px; /* distance from center — tweak to taste */
 }
 /* 5 tags placed 72° apart, starting at the top and going clockwise */
