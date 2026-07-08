@@ -78,11 +78,11 @@
               </defs>
             </svg>
           </div>
-          <div class="about__tag about__tag--1">🎯 Strategy</div>
-          <div class="about__tag about__tag--2">🎨 Design</div>
-          <div class="about__tag about__tag--3">💻 Code</div>
-          <div class="about__tag about__tag--4">🤖 Automation</div>
-          <div class="about__tag about__tag--5">🔍 QA & Automation</div>
+          <div class="about__tag about__tag--1"><a href="#marketing">🎯 Strategy</a></div>
+          <div class="about__tag about__tag--2"><a href="#design">🎨 Design</a></div>
+          <div class="about__tag about__tag--3"><a href="#development">💻 Code</a></div>
+          <div class="about__tag about__tag--4"><a href="#VA">🤖 Automation</a></div>
+          <div class="about__tag about__tag--5"><a href="#QA">🔍 QA & Automation</a></div>
         </div>
       </div>
       <div class="about__content">
@@ -139,15 +139,16 @@
       <h2 class="section__title reveal" style="text-align:center">Projects That Made an Impact</h2>
       <div class="projects__filters reveal">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="ux">UX / UI</button>
-        <button class="filter-btn" data-filter="dev">Dev</button>
-        <button class="filter-btn" data-filter="marketing">Marketing</button>
-        <button class="filter-btn" data-filter="va">Virtual Assistant</button>
+        <button class="filter-btn" data-filter="ux" id="design">UX / UI</button>
+        <button class="filter-btn" data-filter="dev" id="development">Dev</button>
+        <button class="filter-btn" data-filter="marketing" id="marketing">Marketing</button>
+        <button class="filter-btn" data-filter="va" id="VA">Virtual Assistant</button>
+        <button class="filter-btn" data-filter="qa" id="QA">QA & Automation</button>
       </div>
       <div class="projects__grid" id="projects-grid">
 
         <!-- Card 1 — Raph's Collection (real photo) -->
-        <article class="project-card reveal" data-category="ux">
+        <article class="project-card reveal" data-category="ux" >
           <div class="project-card__img has-photo">
             <img
               src="images/Raph.png"
@@ -155,7 +156,7 @@
               loading="lazy"
             />
           </div>
-          <div class="project-card__body">
+          <div class="project-card__body" >
             <div class="project-card__tags"><span>UX Design</span><span>E-Commerce</span><span>Figma</span></div>
             <h3 class="project-card__title">Raph's Collection — Fashion Store</h3>
             <p class="project-card__desc">End-to-end UX/UI design for a fashion e-commerce store. Crafted intuitive category navigation, hero banners, and a streamlined checkout flow to drive conversions.</p>
@@ -166,7 +167,7 @@
         </article>
 
         <!-- Card 2 -->
-        <article class="project-card reveal" data-category="dev">
+        <article class="project-card reveal" data-category="dev" >
           <div class="project-card__img has-photo">
             <img
               src="images/Password.png"
