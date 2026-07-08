@@ -408,8 +408,12 @@ body {
   font-size: 0.85rem;
   font-weight: 500;
   white-space: nowrap;
-  text-decoration: none;
   --radius: 190px; /* distance from center — tweak to taste */
+}
+.about__tag a {
+  color: var(--clr-text);
+  text-decoration: none;
+  transition: color var(--transition);
 }
 /* 5 tags placed 72° apart, starting at the top and going clockwise */
 .about__tag--1 { transform: rotate(0deg)   translate(var(--radius)) rotate(0deg); }
